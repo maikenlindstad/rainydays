@@ -371,4 +371,8 @@ footer {
   .adjust-footer-content input {
     width: 30px;
   }
+
+  .adjust-footer-content input {
+    margin-left: 20px;
+  }
 }
