@@ -11,8 +11,8 @@ header {
   height: 300px;
   background-image: linear-gradient(
       0deg,
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.3)
+      rgba(255, 255, 255, 0.705),
+      rgba(255, 255, 255, 0.507)
     ),
     url(../images/pexels-avery-nielsenwebb-2406384.png);
   background-repeat: no-repeat;
@@ -20,11 +20,25 @@ header {
   padding: 0;
   background-position-x: right;
   background-position-y: bottom;
+  text-align: left;
 }
 
 #logo {
   height: 6em;
   margin: 40px 60px;
+}
+
+#cart {
+  float: right;
+  margin-top: 8em;
+  margin-right: 0;
+  background-color: #1a39408c;
+  padding: 20px 60px 5px 20px;
+  border-radius: 45px 0 0 45px;
+}
+
+#cart img {
+  width: 80px;
 }
 
 ul {
