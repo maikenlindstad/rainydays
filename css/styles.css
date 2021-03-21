@@ -29,16 +29,26 @@ header {
 }
 
 #cart {
+  float: left;
+}
+
+#hamburger-icon,
+header input {
+  display: none;
+}
+
+.mini-nav {
   float: right;
-  margin-top: 8em;
+  margin-top: -3em;
   margin-right: 0;
   background-color: #1a39408c;
-  padding: 20px 60px 5px 20px;
+  padding: 20px 60px 10px 20px;
   border-radius: 45px 0 0 45px;
 }
 
-#cart img {
+.mini-nav img {
   width: 80px;
+  margin-left: 20px;
 }
 
 ul {
@@ -53,7 +63,7 @@ li {
   display: inline;
   background-color: #1a39408c;
   border-radius: 25px 25px 0 0;
-  padding: 5px 0;
+  margin: -8px 0;
   width: 100%;
   text-align: center;
 }
@@ -62,7 +72,7 @@ nav a {
   text-transform: uppercase;
   color: white;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 30px;
   padding: 10px 60px;
   margin-top: 60px;
 }
@@ -102,6 +112,10 @@ li.active {
   text-transform: uppercase;
   margin: 4px;
   text-shadow: 3px 3px 6px black;
+}
+
+.latest-news p,
+.latest-news span {
   padding-left: 60px;
 }
 
@@ -209,9 +223,152 @@ footer {
 .adjust-footer-content {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  justify-content: center;
   padding: 10px auto;
-  gap: 30rem;
   display: grid;
   margin: auto;
+}
+
+@media only screen and (max-width: 1530px) {
+  nav {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav,
+  input {
+    display: block;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  #hamburger-icon {
+    width: 80px;
+    display: block;
+    margin-left: 20px;
+  }
+
+  .mini-nav {
+    margin-top: -21px;
+  }
+
+  /*Navigation*/
+  ul {
+    margin-top: 50px;
+    display: inline-block;
+  }
+
+  li {
+    display: block;
+    background-color: #1a3940;
+    border-radius: 0;
+    padding: 30px 0;
+    margin: -10px 0;
+  }
+
+  nav a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+  nav {
+    position: absolute;
+    width: 100%;
+  }
+
+  .latest-news {
+    height: 150px;
+    padding: 50px;
+    background-position-y: top;
+  }
+
+  .latest-news p,
+  .latest-news span {
+    padding-left: 0px;
+  }
+
+  .headlines {
+    margin-top: 20px;
+    max-width: 490px;
+  }
+  .latest-news h1 {
+    font-size: 2em;
+  }
+
+  .latest-news p,
+  .latest-news span {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  .adjust-footer-content img,
+  .adjust-footer-content input {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .laptop-image {
+    display: none;
+  }
+
+  .festival-look-2023 {
+    grid-template-columns: auto;
+  }
+  h2 {
+    font-size: 3em;
+  }
+
+  .ladies-raincoats,
+  .mens-raincoats {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .mini-nav {
+    margin-top: -10px;
+    width: 0px;
+  }
+
+  .mini-nav img {
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #hamburger-icon {
+    width: 60px;
+    margin-top: -10;
+  }
+
+  .latest-news {
+    height: 400px;
+  }
+
+  .headlines p {
+    font-size: 24px;
+    margin-right: 5px;
+  }
+
+  .ladies-raincoats,
+  .mens-raincoats {
+    margin-top: 0;
+  }
+  .latest-news h1,
+  .banner p,
+  .ladies-raincoats p,
+  .mens-raincoats p {
+    font-size: 2.5em;
+  }
+
+  .adjust-footer-content img,
+  .adjust-footer-content input {
+    width: 30px;
+  }
 }
