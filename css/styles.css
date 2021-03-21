@@ -334,7 +334,8 @@ footer {
     height: 400px;
   }
 
-  .headlines p {
+  .headlines p,
+  .headlines span {
     font-size: 24px;
     margin-right: 5px;
   }
