@@ -27,10 +27,6 @@ header {
   margin: 40px 60px;
 }
 
-#cart {
-  float: left;
-}
-
 #hamburger-icon,
 header input {
   display: none;
@@ -89,7 +85,6 @@ li.active {
 }
 
 .latest-news {
-  text-align: center;
   background-image: url(../images/Umbrella.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,19 +113,16 @@ li.active {
   padding-left: 60px;
 }
 
-.latest-news p {
-  text-decoration: underline;
-}
-
 .latest-news a {
   text-transform: uppercase;
   color: white;
-  text-decoration: none;
   padding: 0 20px;
   margin-top: 0;
 }
 
-h2 {
+h2,
+.ladies-raincoats p,
+.mens-raincoats p {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
@@ -139,12 +131,13 @@ h2 {
   padding: 0 20px;
   margin-top: 0;
   font-weight: 700;
-  font-family: "Noto Sans JP", sans-serif;
   grid-area: 1 / 1 / -1 / -1;
   place-self: center;
   z-index: 10;
 }
 
+.ladies-raincoats,
+.mens-raincoats,
 .festival-look-2023 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -181,11 +174,8 @@ h2 {
   color: #92badc;
 }
 
-/*section raincoats*/
-
 .ladies-raincoats,
 .mens-raincoats {
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 30px auto;
 }
@@ -199,13 +189,6 @@ h2 {
 .ladies-raincoats p,
 .mens-raincoats p {
   text-decoration: underline;
-  text-transform: uppercase;
-  color: white;
-  font-size: 4em;
-  font-weight: 700;
-  grid-area: 1 / 1 / -1 / -1;
-  place-self: center;
-  z-index: 10;
 }
 
 .mens-raincoats {
