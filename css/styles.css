@@ -1,0 +1,204 @@
+/*Global*/
+body {
+  margin: 0;
+  background-image: linear-gradient(#1a3940, #ea8953);
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+header {
+  height: 300px;
+  height: 300px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url(../images/pexels-avery-nielsenwebb-2406384.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+#logo {
+  height: 6em;
+  margin: 40px 60px;
+}
+
+ul {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  margin-top: 85px;
+  display: flex;
+}
+
+li {
+  display: inline;
+  background-color: #1a39408c;
+  border-radius: 25px 25px 0 0;
+  padding: 5px 0;
+  width: 100%;
+  text-align: center;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 60px;
+  margin-top: 60px;
+}
+
+li.active {
+  background-color: #1a3940;
+}
+
+/*Homepage*/
+.headlines {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  max-width: 600px;
+}
+
+.latest-news {
+  text-align: center;
+  background-image: url(../images/Umbrella.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: right;
+  margin: 20px;
+  height: 190px;
+  padding: 100px;
+}
+
+.latest-news p,
+.latest-news h1,
+.latest-news span {
+  font-size: 3.5em;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: white;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 4px;
+  text-shadow: 3px 3px 6px black;
+  padding-left: 60px;
+}
+
+.latest-news p {
+  text-decoration: underline;
+}
+
+.latest-news a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  padding: 0 20px;
+  margin-top: 0;
+}
+
+h2 {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 3px 3px 6px black;
+  font-size: 4em;
+  padding: 0 20px;
+  margin-top: 0;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  grid-area: 1 / 1 / -1 / -1;
+  place-self: center;
+  z-index: 10;
+}
+
+.festival-look-2023 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: -1em;
+}
+
+.img-grid {
+  grid-area: 1 / 1 / -1 / -1;
+}
+
+.festival-look-2023 img {
+  width: 100%;
+}
+
+.banner {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.534);
+  padding: 10px;
+}
+
+.banner p {
+  display: inline-block;
+  font-size: 4em;
+  text-transform: uppercase;
+  margin: 5px;
+  text-shadow: 3px 3px 6px black;
+}
+
+#warm {
+  color: #ffb186;
+}
+
+#heavy {
+  color: #92badc;
+}
+
+/*section raincoats*/
+
+.ladies-raincoats,
+.mens-raincoats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 30px auto;
+}
+
+.ladies-raincoats img,
+.mens-raincoats img {
+  width: 100%;
+  filter: brightness(60%);
+}
+
+.ladies-raincoats p,
+.mens-raincoats p {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: white;
+  font-size: 4em;
+  font-weight: 700;
+  grid-area: 1 / 1 / -1 / -1;
+  place-self: center;
+  z-index: 10;
+}
+
+.mens-raincoats {
+  margin-bottom: 100px;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+footer .back {
+  float: left;
+}
+
+footer .information {
+  float: right;
+  display: inline;
+}
