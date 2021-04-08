@@ -25,3 +25,27 @@
 .mens-raincoats img:hover {
   box-shadow: none;
 }
+
+@media only screen and (max-width: 1200px) {
+  .ladies-raincoats,
+  .mens-raincoats {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .ladies-raincoats,
+  .mens-raincoats {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .ladies-raincoats,
+  .mens-raincoats {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 50px 30px;
+  }
+}
