@@ -1,0 +1,27 @@
+.ladies-raincoats,
+.mens-raincoats {
+  display: grid;
+}
+
+.img-grid {
+  grid-area: 1 / 1 / -1 / -1;
+}
+
+.ladies-raincoats,
+.mens-raincoats {
+  grid-template-columns: repeat(4, 1fr);
+  margin: 50px 30px;
+}
+
+.ladies-raincoats img,
+.mens-raincoats img {
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: 8px 8px 16px rgb(17, 32, 29);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.ladies-raincoats img:hover,
+.mens-raincoats img:hover {
+  box-shadow: none;
+}

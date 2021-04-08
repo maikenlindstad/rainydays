@@ -1,7 +1,10 @@
 /*Global*/
+html {
+  background-color: #59696c;
+}
 body {
   margin: 0;
-  background-image: linear-gradient(#1a3940, #1a3940, #ea8953);
+  background-image: linear-gradient(#1a3940, #1a3940, #c7a879);
   font-family: "Noto Sans JP", sans-serif;
   text-align: center;
   max-width: 1400px;
@@ -43,6 +46,10 @@ header input {
   border-radius: 45px 0 0 45px;
 }
 
+.mini-nav.active {
+  background-color: #1a3940;
+}
+
 .mini-nav img {
   width: 80px;
   margin-left: 20px;
@@ -78,31 +85,16 @@ li.active {
   background-color: #1a3940;
 }
 
-/*Homepage*/
-.headlines {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: auto;
-  max-width: 600px;
-}
-
-.latest-news img {
+/*Second header*/
+.second-header img {
   width: 85%;
   margin-top: 30px;
   border-radius: 25px;
 }
-.latest-news img {
-  box-shadow: 6px 6px 8px rgb(17, 32, 29);
-  transition: box-shadow 0.3s ease-in-out;
-}
 
-.latest-news img:hover {
-  box-shadow: none;
-}
-
-.latest-news p,
-.latest-news h1,
-.latest-news span {
+.second-header p,
+.second-header h1,
+.second-header span {
   font-size: 3.5em;
   font-weight: 700;
   font-family: "Noto Sans JP", sans-serif;
@@ -113,108 +105,26 @@ li.active {
   text-shadow: 3px 3px 6px black;
 }
 
-.latest-news p,
-.latest-news span {
+.second-header p,
+.second-header span {
   padding-left: 60px;
 }
 
-.latest-news p,
-.festival-look-2023 p,
-.ladies-raincoats p,
-.mens-raincoats p {
+.second-header p {
   text-shadow: 6px 6px 8px rgb(17, 32, 29);
   transition: text-shadow 0.3s ease-in-out;
 }
 
-.latest-news p:hover,
-.festival-look-2023 p:hover,
-.ladies-raincoats p:hover,
-.mens-raincoats p:hover {
+.second-header p:hover {
   text-shadow: none;
 }
 
-.latest-news a {
+.second-header a {
   text-transform: uppercase;
   color: white;
   padding: 0 20px;
   margin-top: 0;
   text-decoration: none;
-}
-
-h2,
-.ladies-raincoats p,
-.mens-raincoats p {
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-shadow: 3px 3px 6px black;
-  font-size: 4em;
-  padding: 0 20px;
-  margin-top: 0;
-  font-weight: 700;
-  grid-area: 1 / 1 / -1 / -1;
-  place-self: center;
-  z-index: 10;
-}
-
-.ladies-raincoats,
-.mens-raincoats,
-.festival-look-2023 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: -1em;
-}
-
-.img-grid {
-  grid-area: 1 / 1 / -1 / -1;
-}
-
-.festival-look-2023 img {
-  width: 100%;
-  filter: brightness(60%);
-}
-
-.banner {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.534);
-  padding: 10px;
-}
-
-.banner p {
-  display: inline-block;
-  font-size: 4em;
-  text-transform: uppercase;
-  margin: 5px;
-  text-shadow: 3px 3px 6px black;
-}
-
-#warm {
-  color: #ffb186;
-}
-
-#heavy {
-  color: #92badc;
-}
-
-.ladies-raincoats,
-.mens-raincoats {
-  grid-template-columns: repeat(4, 1fr);
-  margin: 30px auto;
-}
-
-.ladies-raincoats img,
-.mens-raincoats img {
-  width: 100%;
-  filter: brightness(60%);
-}
-
-/* .ladies-raincoats p,
-.mens-raincoats p {
-  text-decoration: underline;
-} */
-
-.mens-raincoats {
-  margin-bottom: 100px;
 }
 
 footer {
@@ -283,28 +193,24 @@ footer {
     position: absolute;
     width: 100%;
   }
-
-  .latest-news {
+  .second-header {
     height: 150px;
     padding: 50px;
     background-position-y: top;
+    margin-bottom: 300px;
   }
 
-  .latest-news p,
-  .latest-news span {
+  .second-header p,
+  .second-header span {
     padding-left: 0px;
   }
 
-  .headlines {
-    margin-top: 20px;
-    max-width: 490px;
-  }
-  .latest-news h1 {
+  .second-header h1 {
     font-size: 2em;
   }
 
-  .latest-news p,
-  .latest-news span {
+  .second-header p,
+  .second-header span {
     font-size: 2em;
   }
 }
@@ -317,20 +223,8 @@ footer {
 }
 
 @media only screen and (max-width: 750px) {
-  .laptop-image {
-    display: none;
-  }
-
-  .festival-look-2023 {
-    grid-template-columns: auto;
-  }
-  h2 {
-    font-size: 3em;
-  }
-
-  .ladies-raincoats,
-  .mens-raincoats {
-    grid-template-columns: auto;
+  .second-header {
+    margin-bottom: 500px;
   }
 }
 
@@ -351,29 +245,20 @@ footer {
     margin-top: -10;
   }
 
-  .latest-news {
-    height: 400px;
-  }
-
-  .headlines p,
-  .headlines span {
-    font-size: 24px;
-    margin-right: 5px;
-  }
-
-  .ladies-raincoats,
-  .mens-raincoats {
-    margin-top: 0;
-  }
-  .latest-news h1,
-  .banner p,
-  .ladies-raincoats p,
-  .mens-raincoats p {
-    font-size: 2.5em;
-  }
-
   .footer-content img,
   .footer-content input {
     width: 30px;
+  }
+  .second-header {
+    height: 400px;
+  }
+  .second-header {
+    margin-bottom: 90px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .second-header {
+    margin-bottom: 45px;
   }
 }

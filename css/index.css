@@ -1,0 +1,154 @@
+.headlines {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  max-width: 600px;
+}
+
+.festival-look-2023 p,
+.ladies-raincoats p,
+.mens-raincoats p {
+  text-shadow: 6px 6px 8px rgb(17, 32, 29);
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.festival-look-2023 p:hover,
+.ladies-raincoats p:hover,
+.mens-raincoats p:hover {
+  text-shadow: none;
+}
+
+h2,
+.ladies-raincoats p,
+.mens-raincoats p {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 3px 3px 6px black;
+  font-size: 4em;
+  padding: 0 20px;
+  margin-top: 0;
+  font-weight: 700;
+  grid-area: 1 / 1 / -1 / -1;
+  place-self: center;
+  z-index: 10;
+}
+
+.ladies-raincoats,
+.mens-raincoats,
+.festival-look-2023 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: -1em;
+}
+
+.img-grid {
+  grid-area: 1 / 1 / -1 / -1;
+}
+
+.festival-look-2023 img {
+  width: 100%;
+  filter: brightness(60%);
+}
+
+.md-image {
+  display: none;
+}
+
+.banner {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.534);
+  padding: 10px;
+}
+
+.banner p {
+  display: inline-block;
+  font-size: 4em;
+  text-transform: uppercase;
+  margin: 5px;
+  text-shadow: 3px 3px 6px black;
+}
+
+#warm {
+  color: #ffb186;
+}
+
+#heavy {
+  color: #92badc;
+}
+
+.ladies-raincoats,
+.mens-raincoats {
+  grid-template-columns: repeat(4, 1fr);
+  margin: 30px auto;
+}
+
+.ladies-raincoats img,
+.mens-raincoats img {
+  width: 100%;
+  filter: brightness(70%);
+}
+
+.mens-raincoats {
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .headlines {
+    margin-top: 20px;
+    max-width: 490px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .laptop-image {
+    display: none;
+  }
+
+  .md-image {
+    display: block;
+  }
+
+  .festival-look-2023 {
+    grid-template-columns: auto;
+  }
+  h2 {
+    font-size: 3em;
+  }
+
+  .ladies-raincoats,
+  .mens-raincoats {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .headlines p,
+  .headlines span {
+    font-size: 24px;
+    margin-right: 5px;
+  }
+
+  .ladies-raincoats,
+  .mens-raincoats {
+    margin-top: 0;
+  }
+  .latest-news h1,
+  .banner p,
+  .ladies-raincoats p,
+  .mens-raincoats p {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .headlines p {
+    font-size: 10px;
+  }
+  .latest-news {
+    margin-bottom: 45px;
+  }
+}
