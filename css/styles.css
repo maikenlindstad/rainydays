@@ -60,7 +60,7 @@ li {
   display: inline;
   background-color: #1a39408c;
   border-radius: 25px 25px 0 0;
-  margin: -8px 0;
+  margin: -7px 0;
   width: 100%;
   text-align: center;
 }
@@ -86,15 +86,18 @@ li.active {
   max-width: 600px;
 }
 
-.latest-news {
-  background-image: url(../images/Umbrella.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: bottom;
-  background-position-x: right;
-  margin: 20px;
-  height: 190px;
-  padding: 100px;
+.latest-news img {
+  width: 85%;
+  margin-top: 30px;
+  border-radius: 25px;
+}
+.latest-news img {
+  box-shadow: 6px 6px 8px rgb(17, 32, 29);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.latest-news img:hover {
+  box-shadow: none;
 }
 
 .latest-news p,
@@ -115,11 +118,27 @@ li.active {
   padding-left: 60px;
 }
 
+.latest-news p,
+.festival-look-2023 p,
+.ladies-raincoats p,
+.mens-raincoats p {
+  text-shadow: 6px 6px 8px rgb(17, 32, 29);
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.latest-news p:hover,
+.festival-look-2023 p:hover,
+.ladies-raincoats p:hover,
+.mens-raincoats p:hover {
+  text-shadow: none;
+}
+
 .latest-news a {
   text-transform: uppercase;
   color: white;
   padding: 0 20px;
   margin-top: 0;
+  text-decoration: none;
 }
 
 h2,
@@ -152,6 +171,7 @@ h2,
 
 .festival-look-2023 img {
   width: 100%;
+  filter: brightness(60%);
 }
 
 .banner {
@@ -188,10 +208,10 @@ h2,
   filter: brightness(60%);
 }
 
-.ladies-raincoats p,
+/* .ladies-raincoats p,
 .mens-raincoats p {
   text-decoration: underline;
-}
+} */
 
 .mens-raincoats {
   margin-bottom: 100px;
