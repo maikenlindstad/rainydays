@@ -1,6 +1,7 @@
 /*Global*/
 html {
   background-color: #59696c;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -134,6 +135,7 @@ footer {
   bottom: 0;
   width: 100%;
   z-index: 20;
+  padding: 10px 0;
 }
 
 .footer-content {
