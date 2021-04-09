@@ -1,13 +1,24 @@
 .headlines {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
-  max-width: 600px;
+  /* max-width: 600px; */
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .festival-look-2023 p,
 .ladies-raincoats p,
-.mens-raincoats p {
+.mens-raincoats p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
   text-shadow: 6px 6px 8px rgb(17, 32, 29);
   transition: text-shadow 0.3s ease-in-out;
 }
@@ -18,7 +29,9 @@
   text-shadow: none;
 }
 
-h2,
+h4,
+h5,
+h6,
 .ladies-raincoats p,
 .mens-raincoats p {
   color: white;
@@ -96,7 +109,7 @@ h2,
 @media only screen and (max-width: 1200px) {
   .headlines {
     margin-top: 20px;
-    max-width: 490px;
+    /* max-width: 490px; */
   }
 }
 
@@ -122,11 +135,21 @@ h2,
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .hedlines {
+    display: flex;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .headlines p,
   .headlines span {
     font-size: 24px;
     margin-right: 5px;
+  }
+
+  .festival-look-2023 {
+    margin-top: 50px;
   }
 
   .ladies-raincoats,

@@ -94,6 +94,8 @@ li.active {
 
 .second-header p,
 .second-header h1,
+.second-header h2,
+.second-header h3,
 .second-header span {
   font-size: 3.5em;
   font-weight: 700;
@@ -106,9 +108,9 @@ li.active {
 }
 
 .second-header p,
-.second-header span {
+/* .second-header span {
   padding-left: 60px;
-}
+} */
 
 .second-header p {
   text-shadow: 6px 6px 8px rgb(17, 32, 29);
