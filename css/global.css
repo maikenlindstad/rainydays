@@ -232,7 +232,7 @@ footer {
 
 @media only screen and (max-width: 750px) {
   .second-header {
-    margin-bottom: 550px;
+    margin-bottom: 600px;
   }
   .laptop-image {
     display: none;
@@ -268,7 +268,7 @@ footer {
     height: 400px;
   }
   .second-header {
-    margin-bottom: 90px;
+    margin-bottom: 110px;
   }
 }
 
