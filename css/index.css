@@ -1,8 +1,6 @@
 .headlines {
-  /* display: grid; */
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
-  /* max-width: 600px; */
 }
 
 a {
@@ -10,53 +8,33 @@ a {
   text-decoration: none;
 }
 
-.festival-look-2023 p,
-.ladies-raincoats p,
-.mens-raincoats p,
 h2,
 h3,
 h4,
 h5,
 h6 {
   color: white;
+  text-transform: uppercase;
   text-shadow: 6px 6px 8px rgb(17, 32, 29);
+  font-size: 4em;
   transition: text-shadow 0.3s ease-in-out;
 }
 
-.festival-look-2023 p:hover,
-.ladies-raincoats p:hover,
-.mens-raincoats p:hover {
+h4:hover,
+h5:hover,
+h6:hover {
   text-shadow: none;
 }
 
 h4,
 h5,
-h6,
-.ladies-raincoats p,
-.mens-raincoats p {
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-shadow: 3px 3px 6px black;
-  font-size: 4em;
+h6 {
   padding: 0 20px;
   margin-top: 0;
   font-weight: 700;
   grid-area: 1 / 1 / -1 / -1;
   place-self: center;
   z-index: 10;
-}
-
-.ladies-raincoats,
-.mens-raincoats,
-.festival-look-2023 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: -1em;
-}
-
-.img-grid {
-  grid-area: 1 / 1 / -1 / -1;
 }
 
 .festival-look-2023 img {
@@ -84,18 +62,6 @@ h6,
 
 #heavy {
   color: #92badc;
-}
-
-.ladies-raincoats,
-.mens-raincoats {
-  grid-template-columns: repeat(4, 1fr);
-  margin: 30px auto;
-}
-
-.ladies-raincoats img,
-.mens-raincoats img {
-  width: 100%;
-  filter: brightness(70%);
 }
 
 .mens-raincoats {
@@ -150,9 +116,7 @@ h6,
   h4,
   h5,
   h6,
-  .banner p,
-  .ladies-raincoats p,
-  .mens-raincoats p {
+  .banner p {
     font-size: 2.5em;
   }
 }

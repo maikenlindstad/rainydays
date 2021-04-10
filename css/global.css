@@ -1,7 +1,6 @@
 /*Global*/
 html {
   background-color: #59696c;
-  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -11,7 +10,6 @@ body {
   max-width: 1400px;
   margin: auto;
 }
-
 header {
   height: 300px;
   background-image: linear-gradient(
@@ -27,17 +25,14 @@ header {
   background-position-y: bottom;
   text-align: left;
 }
-
 #logo {
   height: 6em;
   margin: 40px 60px;
 }
-
 #hamburger-icon,
 header input {
   display: none;
 }
-
 .mini-nav {
   float: right;
   margin-top: -3em;
@@ -46,16 +41,13 @@ header input {
   padding: 20px 60px 10px 20px;
   border-radius: 45px 0 0 45px;
 }
-
-.mini-nav.active {
+.active {
   background-color: #1a3940;
 }
-
 .mini-nav img {
   width: 80px;
   margin-left: 20px;
 }
-
 ul {
   width: 100%;
   padding: 0;
@@ -63,7 +55,6 @@ ul {
   margin-top: 98px;
   display: flex;
 }
-
 li {
   display: inline;
   background-color: #1a39408c;
@@ -72,7 +63,6 @@ li {
   width: 100%;
   text-align: center;
 }
-
 nav a {
   text-transform: uppercase;
   color: white;
@@ -81,23 +71,19 @@ nav a {
   padding: 10px 60px;
   margin-top: 60px;
 }
-
 li.active {
   background-color: #1a3940;
 }
-
-/*Second header*/
 .second-header img {
   width: 92%;
   margin-top: 30px;
   border-radius: 25px;
 }
-
 .second-header p,
 .second-header h1,
 .second-header h2,
 .second-header h3,
-.second-header span {
+span {
   font-size: 3.5em;
   font-weight: 700;
   font-family: "Noto Sans JP", sans-serif;
@@ -107,21 +93,6 @@ li.active {
   margin: 4px;
   text-shadow: 3px 3px 6px black;
 }
-
-.second-header p,
-/* .second-header span {
-  padding-left: 60px;
-} */
-
-.second-header p {
-  text-shadow: 6px 6px 8px rgb(17, 32, 29);
-  transition: text-shadow 0.3s ease-in-out;
-}
-
-.second-header p:hover {
-  text-shadow: none;
-}
-
 .second-header a {
   text-transform: uppercase;
   color: white;
@@ -129,10 +100,43 @@ li.active {
   margin-top: 0;
   text-decoration: none;
 }
-
+a {
+  text-shadow: 6px 6px 8px rgb(17, 32, 29);
+  transition: text-shadow 0.3s ease-in-out;
+}
+a:hover {
+  text-shadow: none;
+}
 .md-image {
   display: none;
 }
+/*Image grid and raincoats*/
+.ladies-raincoats,
+.mens-raincoats,
+.festival-look-2023 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0em;
+}
+
+.img-grid {
+  grid-area: 1 / 1 / -1 / -1;
+}
+
+.ladies-raincoats,
+.mens-raincoats {
+  grid-template-columns: repeat(4, 1fr);
+  margin: 30px auto;
+}
+
+.ladies-raincoats img,
+.mens-raincoats img {
+  width: 100%;
+  filter: brightness(70%);
+  border-radius: 60px;
+}
+
+/***************************/
 
 footer {
   background-color: rgba(255, 255, 255, 0.5);
@@ -141,7 +145,6 @@ footer {
   z-index: 20;
   padding: 10px 0;
 }
-
 .footer-content {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -149,37 +152,29 @@ footer {
   display: grid;
   margin: auto;
 }
-
 @media only screen and (max-width: 1200px) {
   nav {
     display: none;
   }
-
   #hamburger-menu:checked ~ nav,
   header input {
     display: block;
   }
-
   #hamburger-menu {
     display: none;
   }
-
   #hamburger-icon {
     width: 80px;
     display: block;
     margin-left: 20px;
   }
-
   .mini-nav {
     margin-top: -21px;
   }
-
-  /*Navigation*/
   ul {
     margin-top: 50px;
     display: inline-block;
   }
-
   li {
     display: block;
     background-color: #1a3940;
@@ -187,16 +182,11 @@ footer {
     padding: 30px 0;
     margin: -10px 0;
   }
-
   nav a {
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
     font-size: 2em;
     padding: 0px;
     margin-top: 0px;
   }
-
   nav {
     position: absolute;
     width: 100%;
@@ -207,29 +197,21 @@ footer {
     background-position-y: top;
     margin-bottom: 300px;
   }
-
   .second-header p,
   .second-header span {
     padding-left: 0px;
+    font-size: 2em;
   }
-
   .second-header h1 {
     font-size: 2em;
   }
-
-  .second-header p,
-  .second-header span {
-    font-size: 2em;
-  }
 }
-
 @media only screen and (max-width: 815px) {
   .footer-content img,
   .footer-content input {
     width: 50px;
   }
 }
-
 @media only screen and (max-width: 750px) {
   .second-header {
     margin-bottom: 600px;
@@ -237,41 +219,33 @@ footer {
   .laptop-image {
     display: none;
   }
-
   .md-image {
     display: block;
   }
 }
-
 @media only screen and (max-width: 500px) {
   .mini-nav {
     margin-top: -10px;
     width: 0px;
   }
-
   .mini-nav img {
     width: 40px;
     margin-left: 5px;
     margin-right: 5px;
   }
-
   #hamburger-icon {
     width: 60px;
     margin-top: -10;
   }
-
   .footer-content img,
   .footer-content input {
     width: 30px;
   }
   .second-header {
     height: 400px;
-  }
-  .second-header {
     margin-bottom: 110px;
   }
 }
-
 @media only screen and (max-width: 300px) {
   .second-header {
     margin-bottom: 45px;
