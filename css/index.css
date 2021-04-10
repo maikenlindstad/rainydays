@@ -8,6 +8,33 @@ a {
   text-decoration: none;
 }
 
+.festival-look-2023 img {
+  width: 100%;
+  filter: brightness(60%);
+}
+
+.banner {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.534);
+  padding: 10px;
+}
+
+.banner p {
+  display: inline-block;
+  font-size: 4em;
+  text-transform: uppercase;
+  margin: 5px;
+  text-shadow: 3px 3px 6px black;
+}
+
+#warm {
+  color: #ffb186;
+}
+
+#heavy {
+  color: #92badc;
+}
+
 h2,
 h3,
 h4,
@@ -37,33 +64,6 @@ h6 {
   z-index: 10;
 }
 
-.festival-look-2023 img {
-  width: 100%;
-  filter: brightness(60%);
-}
-
-.banner {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.534);
-  padding: 10px;
-}
-
-.banner p {
-  display: inline-block;
-  font-size: 4em;
-  text-transform: uppercase;
-  margin: 5px;
-  text-shadow: 3px 3px 6px black;
-}
-
-#warm {
-  color: #ffb186;
-}
-
-#heavy {
-  color: #92badc;
-}
-
 .mens-raincoats {
   margin-bottom: 100px;
 }
@@ -76,11 +76,12 @@ h6 {
 }
 
 @media only screen and (max-width: 750px) {
-  .festival-look-2023 {
-    grid-template-columns: auto;
-  }
   h2 {
     font-size: 3em;
+  }
+
+  .festival-look-2023 {
+    grid-template-columns: auto;
   }
 
   .ladies-raincoats,

@@ -1,3 +1,8 @@
+.added {
+  text-align: right;
+  margin-top: -24px;
+  margin-right: 200px;
+}
 .article {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -36,6 +41,12 @@ p {
   margin: 10px 0 0 10px;
 }
 
+select {
+  padding: 5px 60px;
+  border-radius: 25px;
+  font-size: 1.5em;
+}
+
 button {
   margin-top: 5px;
   display: block;
@@ -51,21 +62,8 @@ button {
 button:hover {
   box-shadow: none;
 }
-
-select {
-  padding: 5px 60px;
-  border-radius: 25px;
-  font-size: 1.5em;
-}
-
 a {
   text-decoration: none;
-}
-
-.added {
-  text-align: right;
-  margin-top: -24px;
-  margin-right: 200px;
 }
 
 @media only screen and (max-width: 750px) {

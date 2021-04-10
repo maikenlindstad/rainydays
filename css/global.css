@@ -111,9 +111,9 @@ a:hover {
   display: none;
 }
 /*Image grid and raincoats*/
+.festival-look-2023,
 .ladies-raincoats,
-.mens-raincoats,
-.festival-look-2023 {
+.mens-raincoats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0em;
