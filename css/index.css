@@ -64,10 +64,6 @@ h6,
   filter: brightness(60%);
 }
 
-.md-image {
-  display: none;
-}
-
 .banner {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.534);
@@ -114,14 +110,6 @@ h6,
 }
 
 @media only screen and (max-width: 750px) {
-  .laptop-image {
-    display: none;
-  }
-
-  .md-image {
-    display: block;
-  }
-
   .festival-look-2023 {
     grid-template-columns: auto;
   }
