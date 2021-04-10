@@ -148,7 +148,7 @@ footer {
 .footer-content {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  padding: 10px auto;
+  padding: 10px;
   display: grid;
   margin: auto;
 }
@@ -235,7 +235,7 @@ footer {
   }
   #hamburger-icon {
     width: 60px;
-    margin-top: -10;
+    margin-top: -10px;
   }
   .footer-content img,
   .footer-content input {
