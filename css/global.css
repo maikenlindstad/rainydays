@@ -132,7 +132,6 @@ a:hover {
 .ladies-raincoats img,
 .mens-raincoats img {
   width: 100%;
-  filter: brightness(70%);
   border-radius: 60px;
 }
 
